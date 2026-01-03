@@ -173,6 +173,12 @@ icon = "fa-solid fa-envelope fa-2x"
 weight = 5
 url = "mailto:hello@piyuple.dev"
 
+[[params.social]]
+name = "GPG Public Key"
+icon = "fa-solid fa-fingerprint fa-2x"
+weight = 6
+url = "https://keys.openpgp.org/vks/v1/by-fingerprint/9A9EF4ECEB12701E635B76830B2DE5A95CE3BE23"
+
 [languages.en]
 languageName = ":uk:"
 
