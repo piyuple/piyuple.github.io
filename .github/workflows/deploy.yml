@@ -44,4 +44,4 @@ jobs:
           publish_dir: ./public
           publish_branch: gh-pages
           force_orphan: false
-          commit_message: "deployment - ${{ steps.timestamp.outputs.time }}"
+          full_commit_message: "deployment - ${{ steps.timestamp.outputs.time }}"
