@@ -1,4 +1,4 @@
-name: Deploy page
+name: Deploy Page
 
 on:
   workflow_dispatch:
@@ -29,7 +29,13 @@ jobs:
           go-version: '1.25'
 
       - name: Build
-        run: hugo --minify
+        run: |
+          hugo mod get
+          hugo --minify
+
+      - name: Current time
+        id: timestamp
+        run: echo "time=$(TZ='Asia/Kolkata' date +'%Y-%m-%dT%H:%M:%S%z')" >> $GITHUB_OUTPUT
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -38,4 +44,4 @@ jobs:
           publish_dir: ./public
           publish_branch: gh-pages
           force_orphan: false
-          commit_message: "deployment - ${{ github.event.head_commit.timestamp }}"
+          commit_message: "deployment - ${{ steps.timestamp.outputs.time }}"
