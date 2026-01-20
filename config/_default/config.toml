@@ -24,12 +24,13 @@ unsafe = true
 [params]
 author = "Piyush Ranjan"
 license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>'
-description = "My personal devlog"
+description = "Pythons, Honey Badgers and the Imaginary Dimension"
 keywords = "blog,developer,ml,ai"
 info = ["ML, Data Engineer"]
 avatarURL = "images/avatar.png"
 faviconSVG = "./favicon.svg"
 touchicon = "./apple-touch-icon.png"
+enableTwemoji = true
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2025
@@ -57,6 +58,9 @@ customJS = []
 
 # Custom remote JS files
 customRemoteJS = []
+
+math = true
+katex = true
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]
