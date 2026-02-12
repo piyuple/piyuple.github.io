@@ -26,7 +26,7 @@ author = "Piyush Ranjan"
 license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>'
 description = "Pythons, Honey Badgers and the Imaginary Dimension"
 keywords = "blog,developer,ml,ai"
-info = ["ML, Data Engineer"]
+info = ["Machine Learning Engineer"]
 avatarURL = "images/avatar.png"
 faviconSVG = "./favicon.svg"
 touchicon = "./apple-touch-icon.png"
